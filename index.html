@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Picture This!</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Responsive Images</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-  <header class="header">
-    <div class="title">
-      <h1>Picture This!</h1>
-      <h4>My Really Cool Blog Post</h4>
-    </div>
-    <img src="images/museum.jpg" alt="placeholder">
+  <header>Responsive Images</header>
+  <div class="image-container">
+    <picture>
+      <source media="(max-width: 959px)">
 
-  </header>
+           <img src="images/museum-320_x_180.jpg" >
+            <img src="images/museum-640_x_360.jpg" >       
+             <img src="images/museum-960_x_540.jpg" > 
+             <img src="images/museum-480_x_270.jpg" > 
+             <img src="images/museum-960_x_540.jpg" >
+             <img src="images/museum-1440_x_810.jpg">  
+             <img src="images/museum-720_x_405.jpg">
+             <img src="images/museum-1440_x_810.jpg">
+             <img src="images/museum-2160_x_1215.jpg">
+             <img src="images/museum-960_x_540.jpg">
+             <img src="images/museum-1920_x_1080.jpg">
+             <img src="images/museum-2880_x_1621.jpg">
+                     
+                    
+      <img src="images/museum-960_x_540.jpg" alt="Landscape Image">
+  </picture>
+
+    <picture> 
+      <source media="(min-width: 960px)">
+      <img src="images/museum-480_x_270.jpg">
+      <img src="images/museum-960_x_540.jpg">
+      <img src="images/museum-1440_x_810.jpg">
+      <img src="images/museum-640_x_360.jpg">
+      <img src="images/museum-1280_x_720.jpg">
+      <img src="images/museum-1920_x_1080.jpg">
+      <img src="images/museum-800_x_450.jpg">
+      <img src="images/museum-1600_x_900.jpg">
+      <img src="images/museum-2400_x_1350.jpg">
+      <img src="images/square-480px.jpg" alt="Square Image">
+    </picture>
+  </div>
 </body>
-
 </html>
